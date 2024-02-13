@@ -1,0 +1,315 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
+
+/* Zmienne */
+:root {
+  --font-family: 'Source Code Pro', monospace;
+  --normal-font: 400;
+  --bold-font: 700;
+}
+
+/* Cała stronka */
+html {
+  background-color: #dfdfdf;
+}
+
+a:hover {
+  color: #3c408c;
+}
+
+/*usunięcie underline'u z całej stronki (z kazdego linka)*/
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Navbar */
+
+header,
+main {
+  background-color: white;
+}
+
+header {
+  background-color: #603450;
+  color: white;
+  padding: 0rem;
+}
+
+header {
+  overflow: auto;
+}
+
+header h1 {
+  float: left;
+}
+
+header img {
+  float: right;
+}
+
+li {
+  display: inline-block;
+  padding: 0px 57px;
+}
+
+nav {
+  margin: 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  background-color: white;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav a{
+  color:#885ca4;
+}
+nav a.active {
+  color: #3c408c;
+}
+
+nav ul li {
+  font-weight: var(--bold-font);
+}
+
+/* Body main footer */
+body {
+  font-family: var(--font-family);
+  min-width: 600px;
+}
+
+main {
+  text-align: center;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  background-color: #603450;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Podkreślenie pod nagłówkiem h2 maina */
+main h2{
+  border-bottom: 1px solid #7f8c8d;
+}
+
+/* Tabelki */
+
+.table-list{
+  border-collapse: collapse;
+  color:#2c3e50;
+  width: 100%;
+}
+
+.table-list,
+.table-list th,
+.table-list td {
+  border: 1px solid #bdc3c7;
+}
+
+.table-list th,
+.table-list tbody tr:nth-child(even) {
+  background-color: #ecf0f1;
+}
+
+/* Przyciski w tabeli */
+
+.list-actions {
+  margin: 0;
+  text-align: center;
+  list-style-type: none;
+  padding: 0;
+}
+
+.list-actions li{
+  display: inline-block;
+}
+
+.list-actions-button-details,
+.list-actions-button-edit,
+.list-actions-button-delete{
+  display: inline-block;
+  min-width: 15%;
+  padding: 0.25rem 0.5rem;
+}
+
+.list-actions-button-details,
+.list-actions-button-edit,
+.list-actions-button-delete,
+.button-add,
+.form-buttons-submit,
+.form-buttons-cancel,
+.return-button {
+  border: none;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+/* Szczegóły */
+.list-actions-button-details{
+  background-color: #2980b9;
+}
+
+.list-actions-button-details:hover{
+  background-color: #3498db;
+}
+
+/* Edycja */
+.list-actions-button-edit{
+  background-color: #f39c12;
+}
+
+.list-actions-button-edit:hover{
+  background-color: #f1c40f;
+}
+
+/* Usuń */
+.list-actions-button-delete,
+.form-buttons-cancel{
+  background-color: #c0392b;
+  min-width: 30%;
+}
+
+.list-actions-button-delete:hover,
+.form-buttons-cancel:hover{
+  background-color: #e74c3c;
+}
+
+/* Nowy rekord */
+
+.button-add,
+.form-buttons-submit,
+.form-buttons-cancel,
+.details-return-button,
+.return-button{
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+}
+
+.button-add{
+  background-color: #27ae60;
+}
+
+.form-buttons-submit{
+  background-color: #27ae60;
+  min-width: 30%;
+}
+
+.button-add:hover,
+.form-buttons-submit:hover{
+  background-color: #2ecc71;
+}
+
+/* Formularze */
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    box-sizing: border-box;
+    padding: 0; margin: 0;
+}
+
+textarea{
+  overflow: auto;
+}
+
+.form{
+  margin-left: 2rem;
+  width: 300px;
+}
+
+.form select,
+.form input[type="text"],
+.form input[type="number"],
+.form input[type="date"],
+.form input[type="email"]{
+  border: 1px solid #7f8c8d;
+  color: #2c3e50;
+  border-radius: 5px;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.form label{
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* asterisk przy formularzu */
+.symbol-required {
+  color: #c0392b;
+}
+
+/* Akceptacja i powrót (formularze) */
+
+.form-buttons-cancel,
+.form-buttons-submit{
+  box-sizing: border-box;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  width:10%;
+}
+
+.form input.error-input{
+  border: 3px solid #e74c3c;
+}
+
+.errors-text {
+  display: block;
+  font-size: 0.85rem;
+  line-height: 2.25rem;
+  margin-top: 0.5rem;
+  color: #e74c3c;
+}
+
+.form-edit-div{
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  width:20%;
+}
+
+.details-return-button{
+  color: #603450
+}
+
+.return-button{
+  background-color: #603450;
+  margin: 0.5rem;
+}
+
+/* Alert Box */
+
+/* The alert message box */
+.alert {
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.327);
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.alert-box{
+  color: red;
+  background-color: white;
+  opacity: 100%;
+}
