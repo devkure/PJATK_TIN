@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roofless studio team managment system</title>
+
+  <!--CSS Styles -->
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+
+<body>
+
+  <!-- Upper horizontal Navbar -->
+  <div>
+    <nav>
+      <header>
+        <h1 class="logo-text">RooflessStudio</h1>
+      </header>
+      <img src="../Roofless_transparent.png" width="146" height="64" alt="Roofless Studio Logo">
+      <h2 class="page-id">Team Managment System</h2>
+      <ul>
+        <li><a href="index.html">Strona Główna</a></li>
+        <li><a href="employee.html" class="active">Pracownicy</a></li>
+        <li><a href="tasks.html">Zadania</a></li>
+        <li><a href="quest.html">Quest</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <main>
+    <h2>Pracownicy</h2>
+    <table class="table-list">
+      <thead>
+        <tr>
+          <th>Imię</th>
+          <th>Nazwisko</th>
+          <th>Nick</th>
+          <th>E-mail</th>
+          <th>Rola</th>
+          <th>Akcje</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Jasiek</td>
+          <td>Brzeziński</td>
+          <td>Tobi</td>
+          <td>3dkure@gmail.com</td>
+          <td>Manager/Grafik</td>
+          <td>
+            <ul class="list-actions">
+              <li><button class="list-actions-button-edit"><a href="employee_edit.html">Edytuj</a></button></li>
+              <li><button class="list-actions-button-delete"><a href="">Usuń</a></button></li>
+            </ul>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <button  class="button-add"><a href="employee_addnew.html">Dodaj nowego pracownika</a></button>
+  </main>
+
+  <footer>
+    Jan, Brzeziński, S20414
+  </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roofless studio team management system</title>
+
+  <!--CSS Styles -->
+  <link rel="stylesheet" href="../styles.css" />
+
+  <!--JavaScript-->
+  <script type="application/javascript" src="../js/validationCommon.js"></script>
+  <script type="application/javascript" src="../js/validationEmpForm.js"></script>
+</head>
+
+<body>
+
+  <!-- Upper horizontal Navbar -->
+  <div>
+    <nav>
+      <header>
+        <h1 class="logo-text">RooflessStudio</h1>
+      </header>
+      <img src="../Roofless_transparent.png" width="146" height="64" alt="Roofless Studio Logo">
+      <h2 class="page-id">Team Management System</h2>
+      <ul>
+        <li><a href="index.html">Strona Główna</a></li>
+        <li><a href="employee.html">Pracownicy</a></li>
+        <li><a href="tasks.html" class="active">Zadania</a></li>
+        <li><a href="quest.html">Quest</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <main>
+    <h2>Zadania</h2>
+    <table class="table-list">
+      <thead>
+        <tr>
+          <th>Task</th>
+          <th>Typ</th>
+          <th>Opis</th>
+          <th>Priorytet</th>
+          <th>Deadline</th>
+          <th>Status</th>
+          <th>Akcje</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Movement</td>
+          <td>Kod</td>
+          <td>Zaimplementować chodzenie</td>
+          <td>MUST</td>
+          <td>Na wczoraj</td>
+          <td>W trakcie</td>
+          <td>
+            <ul class="list-actions">
+              <li><button class="list-actions-button-edit"><a href="tasks_edit.html">Edytuj</a></button></li>
+              <li><button class="list-actions-button-delete"><a href="">Usuń</a></button></li>
+            </ul>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <button class="button-add"><a href="tasks_addnew.html">Dodaj nowe zadanie</a></button>
+  </main>
+
+  <footer>
+    Jan, Brzeziński, S20414
+  </footer>
+
+</body>
+
+</html>

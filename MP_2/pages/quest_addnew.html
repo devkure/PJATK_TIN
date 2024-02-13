@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roofless studio team management system</title>
+
+    <!--CSS Styles -->
+    <link rel="stylesheet" href="../styles.css" />
+
+    <!--JavaScript-->
+    <script type="application/javascript" src="../js/validationCommon.js"></script>
+    <script type="application/javascript" src="../js/validationEmpForm.js"></script>
+</head>
+
+<body>
+
+    <!-- Upper horizontal Navbar -->
+    <div>
+        <nav>
+            <header>
+                <h1 class="logo-text">RooflessStudio</h1>
+            </header>
+            <img src="../Roofless_transparent.png" width="146" height="64" alt="Roofless Studio Logo">
+            <h2 class="page-id">Team Management System</h2>
+            <ul>
+                <li><a href="index.html">Strona Główna</a></li>
+                <li><a href="employee.html">Pracownicy</a></li>
+                <li><a href="tasks.html">Zadania</a></li>
+                <li><a href="quest.html" class="active">Quest</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+
+        <div class="form-edit-div">
+            <h2>Dodaj Quest</h2>
+            <form class="form">
+            
+                <label for="fname">Imie<span class="symbol-required">*</span></label>
+                <input type="text" id="fname" name="fname" placeholder="2-60 znaków">
+                <span id="errorFirstName"></span>
+
+                <label for="lname">Nazwisko<span class="symbol-required">*</span></label>
+                <input type="text" id="lname" name="lname" placeholder="2-60 znaków">
+                <span id="errorLastName"></span>
+
+                <label for="nick">Nick<span class="symbol-required">*</span></label>
+                <input type="text" id="nick" name="nick" placeholder="2-60 znaków">
+                <span id="errorNick"></span>
+
+                <label for="email">E-Mail<span class="symbol-required">*</span></label>
+                <input type="text" id="email" name="email"placeholder="np. nazwa@domena.pl">
+                <span id="errorEmail"></span>
+
+                <label for="role">Rola<span class="symbol-required">*</span></label>
+                <input type="text" id="role" name="role" placeholder="2-60 znaków">
+                <span id="errorRole"></span>
+
+                <label for="task">Task<span class="symbol-required">*</span></label>
+                <input type="text" id="task" name="task" placeholder="2-60 znaków">
+                <span id="errorTaskName"></span>
+
+                <label for="type">Typ<span class="symbol-required">*</span></label>
+                <input type="text" id="type" name="type" placeholder="np. Kod, Art, Enviro">
+                <span id="errorType"></span>
+
+                <label for="desc">Opis<span class="symbol-required">*</span></label>
+                <input type="text" id="desc" name="desc" placeholder="max 150 znaków">
+                <span id="errorDesc"></span>
+
+                <label for="prio">Priorytet<span class="symbol-required">*</span></label>
+                <input type="text" id="prio" name="prio" placeholder="np. MUST/SHOULD/COULD">
+                <span id="errorPrio"></span>
+
+                <label for="deadline">Deadline<span class="symbol-required">*</span></label>
+                <input type="text" id="deadline" name="deadline" placeholder="YYYY-MM-DD">
+                <span id="errorDeadline"></span>
+
+                <label for="status">Status<span class="symbol-required">*</span></label>
+                <input type="text" id="status" name="status" placeholder="2-60 znaków">
+                <span id="errorStatus"></span>
+            </form>
+
+            <div class="form-buttons">
+                <p id="errorsSummary"></p>
+                <button class="form-buttons-submit">Dodaj</button>
+                <button class="form-buttons-cancel"><a href="quest.html">Anuluj</a></button>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        Jan, Brzeziński, S20414
+    </footer>
+
+</body>
+
+</html>
